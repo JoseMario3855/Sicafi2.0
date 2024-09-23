@@ -1,0 +1,14 @@
+# Ignorar archivos de log
+*.log
+
+# Ignorar carpetas de compilación
+bin/
+obj/
+
+# Ignorar archivos de configuración de IDE
+.vs/
+*.suo
+*.user
+
+# Ignorar archivos temporales
+*.tmp
