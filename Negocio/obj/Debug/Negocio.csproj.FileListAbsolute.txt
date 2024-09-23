@@ -1,0 +1,17 @@
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Negocio.dll
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Negocio.pdb
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Datos.dll
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Datos.pdb
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\Datos.dll.config
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josem\source\repos\Vista\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\josem\source\repos\Vista\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\josem\source\repos\Vista\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\josem\source\repos\Vista\Negocio\obj\Debug\Negocio.dll
+C:\Users\josem\source\repos\Vista\Negocio\obj\Debug\Negocio.pdb
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\itextsharp.dll
+C:\Users\josem\source\repos\Vista\Negocio\bin\Debug\itextsharp.xml

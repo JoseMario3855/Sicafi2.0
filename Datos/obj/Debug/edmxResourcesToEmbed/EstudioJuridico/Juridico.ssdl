@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Estudio_JuridicoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="spFichaPredialeHistoriaPropietariosconsultar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialeHistoriaPropietarioscrear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="causa_acto" Type="varchar" Mode="In" />
+    <Parameter Name="propietario" Type="varchar" Mode="In" />
+    <Parameter Name="titulo" Type="varchar" Mode="In" />
+    <Parameter Name="notaria" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_escritura" Type="datetime" Mode="In" />
+    <Parameter Name="fecha_registro" Type="datetime" Mode="In" />
+    <Parameter Name="area" Type="numeric" Mode="In" />
+    <Parameter Name="vendedor_anterior" Type="varchar" Mode="In" />
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="anotacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialeHistoriaPropietariosmodificar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_historiapropietarios" Type="int" Mode="In" />
+    <Parameter Name="causa_acto" Type="varchar" Mode="In" />
+    <Parameter Name="propietario" Type="varchar" Mode="In" />
+    <Parameter Name="titulo" Type="varchar" Mode="In" />
+    <Parameter Name="notaria" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_escritura" Type="datetime" Mode="In" />
+    <Parameter Name="fecha_registro" Type="datetime" Mode="In" />
+    <Parameter Name="area" Type="numeric" Mode="In" />
+    <Parameter Name="vendedor_anterior" Type="varchar" Mode="In" />
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="anotacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialesconsultar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="numero_ficha" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialescrear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="numero_ficha" Type="varchar" Mode="In" />
+    <Parameter Name="folio_matriz" Type="varchar" Mode="In" />
+    <Parameter Name="estado_folio_matriz" Type="bit" Mode="In" />
+    <Parameter Name="fecha_apertura_folio" Type="date" Mode="In" />
+    <Parameter Name="fecha_primera_anotacion" Type="date" Mode="In" />
+    <Parameter Name="area_escritura" Type="numeric" Mode="In" />
+    <Parameter Name="area_ovc" Type="numeric" Mode="In" />
+    <Parameter Name="area_folio" Type="numeric" Mode="In" />
+    <Parameter Name="ruta_archivo" Type="varchar" Mode="In" />
+    <Parameter Name="razon_diferencia_areas" Type="varchar(max)" Mode="In" />
+    <Parameter Name="antecedentes" Type="varchar(max)" Mode="In" />
+    <Parameter Name="estudio_folio_matriz" Type="varchar(max)" Mode="In" />
+    <Parameter Name="analisis_areas" Type="varchar(max)" Mode="In" />
+    <Parameter Name="anotacion_que_afecta_la_inscripcion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="proteccion_colectiva" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos" Type="varchar(max)" Mode="In" />
+    <Parameter Name="instrucciones_visita_campo" Type="varchar(max)" Mode="In" />
+    <Parameter Name="direccion_folio" Type="varchar" Mode="In" />
+    <Parameter Name="quien_elaboro_yaprobo" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_control_calidad_juridico" Type="datetime" Mode="In" />
+    <Parameter Name="control_calidad_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="aprobacion_interventoria" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_aprobacion" Type="datetime" Mode="In" />
+    <Parameter Name="linderos_escritura" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos_folio" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos_campo" Type="varchar(max)" Mode="In" />
+    <Parameter Name="analisis_de_hecho_y_derecho" Type="varchar(max)" Mode="In" />
+    <Parameter Name="inscripcion_catastro" Type="bit" Mode="In" />
+    <Parameter Name="antecedentes_registrales" Type="bit" Mode="In" />
+    <Parameter Name="concepto_juridico" Type="varchar(max)" Mode="In" />
+    <Parameter Name="recomendaciones" Type="varchar(max)" Mode="In" />
+    <Parameter Name="documentos_analizados" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_norte" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_occidente" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_oriente" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_sur" Type="varchar" Mode="In" />
+    <Parameter Name="pk_predio_folio_matriz" Type="varchar" Mode="In" />
+    <Parameter Name="direccion_ovc" Type="varchar" Mode="In" />
+    <Parameter Name="enla_escritura_se_relaciona_plano_protocolizado" Type="bit" Mode="In" />
+    <Parameter Name="complementacion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="observaciones_con_respeto_al_propietario" Type="varchar(max)" Mode="In" />
+    <Parameter Name="se_diligencio_ficha_predial" Type="bit" Mode="In" />
+    <Parameter Name="la_visita_de_campo_produjo_informe" Type="bit" Mode="In" />
+    <Parameter Name="se_levanto_acta_de_colindacia" Type="bit" Mode="In" />
+    <Parameter Name="situacion_juridica_inmueble" Type="varchar(max)" Mode="In" />
+    <Parameter Name="numero_carpeta" Type="varchar" Mode="In" />
+    <Parameter Name="tarjeta_profesional_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="coordinador_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="nombre_interventor" Type="varchar" Mode="In" />
+    <Parameter Name="codigo_municipio" Type="varchar" Mode="In" />
+    <Parameter Name="descripcion_municipio" Type="varchar" Mode="In" />
+    <Parameter Name="datos_informe_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="datos_informe_campo" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_destino" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_sector" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_adquisicion" Type="varchar" Mode="In" />
+    <Parameter Name="numero_ficha_ovc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialeseliminar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialesmodificar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="folio_matriz" Type="varchar" Mode="In" />
+    <Parameter Name="estado_folio_matriz" Type="bit" Mode="In" />
+    <Parameter Name="fecha_apertura_folio" Type="datetime" Mode="In" />
+    <Parameter Name="fecha_primera_anotacion" Type="datetime" Mode="In" />
+    <Parameter Name="area_escritura" Type="numeric" Mode="In" />
+    <Parameter Name="area_ovc" Type="numeric" Mode="In" />
+    <Parameter Name="area_folio" Type="numeric" Mode="In" />
+    <Parameter Name="ruta_archivo" Type="varchar" Mode="In" />
+    <Parameter Name="razon_diferencia_areas" Type="varchar(max)" Mode="In" />
+    <Parameter Name="antecedentes" Type="varchar(max)" Mode="In" />
+    <Parameter Name="estudio_folio_matriz" Type="varchar(max)" Mode="In" />
+    <Parameter Name="analisis_areas" Type="varchar(max)" Mode="In" />
+    <Parameter Name="anotacion_que_afecta_la_inscripcion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="proteccion_colectiva" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos" Type="varchar(max)" Mode="In" />
+    <Parameter Name="instrucciones_visita_campo" Type="varchar(max)" Mode="In" />
+    <Parameter Name="direccion_folio" Type="varchar" Mode="In" />
+    <Parameter Name="quien_elaboro_yaprobo" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_control_calidad_juridico" Type="datetime" Mode="In" />
+    <Parameter Name="control_calidad_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="aprobacion_interventoria" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_aprobacion" Type="datetime" Mode="In" />
+    <Parameter Name="linderos_escritura" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos_folio" Type="varchar(max)" Mode="In" />
+    <Parameter Name="linderos_campo" Type="varchar(max)" Mode="In" />
+    <Parameter Name="analisis_de_hecho_y_derecho" Type="varchar(max)" Mode="In" />
+    <Parameter Name="inscripcion_catastro" Type="bit" Mode="In" />
+    <Parameter Name="antecedentes_registrales" Type="bit" Mode="In" />
+    <Parameter Name="concepto_juridico" Type="varchar(max)" Mode="In" />
+    <Parameter Name="recomendaciones" Type="varchar(max)" Mode="In" />
+    <Parameter Name="documentos_analizados" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_norte" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_occidente" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_oriente" Type="varchar" Mode="In" />
+    <Parameter Name="lindero_sur" Type="varchar" Mode="In" />
+    <Parameter Name="pk_predio_folio_matriz" Type="varchar" Mode="In" />
+    <Parameter Name="direccion_ovc" Type="varchar" Mode="In" />
+    <Parameter Name="enla_escritura_se_relaciona_plano_protocolizado" Type="bit" Mode="In" />
+    <Parameter Name="complementacion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="observaciones_con_respeto_al_propietario" Type="varchar(max)" Mode="In" />
+    <Parameter Name="se_diligencio_ficha_predial" Type="bit" Mode="In" />
+    <Parameter Name="la_visita_de_campo_produjo_informe" Type="bit" Mode="In" />
+    <Parameter Name="se_levanto_acta_de_colindacia" Type="bit" Mode="In" />
+    <Parameter Name="situacion_juridica_inmueble" Type="varchar(max)" Mode="In" />
+    <Parameter Name="numero_carpeta" Type="varchar" Mode="In" />
+    <Parameter Name="tarjeta_profesional_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="coordinador_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="nombre_interventor" Type="varchar" Mode="In" />
+    <Parameter Name="codigo_municipio" Type="varchar" Mode="In" />
+    <Parameter Name="descripcion_municipio" Type="varchar" Mode="In" />
+    <Parameter Name="datos_informe_juridico" Type="varchar" Mode="In" />
+    <Parameter Name="datos_informe_campo" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_destino" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_sector" Type="varchar" Mode="In" />
+    <Parameter Name="descripicion_adquisicion" Type="varchar" Mode="In" />
+    <Parameter Name="numero_ficha_ovc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialHistoriaPropietarioseliminar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialPropietariosconsultar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="id_propietario" Type="int" Mode="In" />
+    <Parameter Name="anotacion" Type="varchar" Mode="In" />
+    <Parameter Name="id_ficha_predial_propietario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialPropietarioscrear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="id_propietario" Type="int" Mode="In" />
+    <Parameter Name="anotacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spFichaPredialPropietariosmodificar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha_perdial_propietario" Type="int" Mode="In" />
+    <Parameter Name="id_propietario" Type="int" Mode="In" />
+    <Parameter Name="anotacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spMatriculaDerivadasconsultar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="matricula" Type="varchar" Mode="In" />
+    <Parameter Name="estado" Type="bit" Mode="In" />
+    <Parameter Name="pk_predio" Type="varchar" Mode="In" />
+    <Parameter Name="ubicar" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spMatriculaDerivadascrear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+    <Parameter Name="matricula" Type="varchar" Mode="In" />
+    <Parameter Name="estado" Type="bit" Mode="In" />
+    <Parameter Name="pk_predio" Type="varchar" Mode="In" />
+    <Parameter Name="ubicar" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spMatriculaDerivadaseliminar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_ficha" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spMatriculaDerivadasmodificar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_matricula_derivada" Type="int" Mode="In" />
+    <Parameter Name="matricula" Type="varchar" Mode="In" />
+    <Parameter Name="estado" Type="bit" Mode="In" />
+    <Parameter Name="pk_predio" Type="varchar" Mode="In" />
+    <Parameter Name="ubicar" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="Estudio_JuridicoModelStoreContainer" />
+</Schema>

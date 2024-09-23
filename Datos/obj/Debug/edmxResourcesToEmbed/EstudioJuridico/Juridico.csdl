@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Estudio_JuridicoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Estudio_JuridicoEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="spFichaPredialPropietariosconsultar" ReturnType="Collection(Estudio_JuridicoModel.spFichaPredialPropietariosconsultar_Result)">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="id_propietario" Mode="In" Type="Int32" />
+      <Parameter Name="anotacion" Mode="In" Type="String" />
+      <Parameter Name="id_ficha_predial_propietario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialPropietarioscrear">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="id_propietario" Mode="In" Type="Int32" />
+      <Parameter Name="anotacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialPropietariosmodificar">
+      <Parameter Name="id_ficha_perdial_propietario" Mode="In" Type="Int32" />
+      <Parameter Name="id_propietario" Mode="In" Type="Int32" />
+      <Parameter Name="anotacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spMatriculaDerivadasconsultar" ReturnType="Collection(Estudio_JuridicoModel.spMatriculaDerivadasconsultar_Result)">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="matricula" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+      <Parameter Name="pk_predio" Mode="In" Type="String" />
+      <Parameter Name="ubicar" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spMatriculaDerivadascrear">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="matricula" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+      <Parameter Name="pk_predio" Mode="In" Type="String" />
+      <Parameter Name="ubicar" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spMatriculaDerivadaseliminar">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spMatriculaDerivadasmodificar">
+      <Parameter Name="id_matricula_derivada" Mode="In" Type="Int32" />
+      <Parameter Name="matricula" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+      <Parameter Name="pk_predio" Mode="In" Type="String" />
+      <Parameter Name="ubicar" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialHistoriaPropietarioseliminar">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialeHistoriaPropietariosconsultar" ReturnType="Collection(Estudio_JuridicoModel.spFichaPredialeHistoriaPropietariosconsultar_Result)">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialeHistoriaPropietarioscrear">
+      <Parameter Name="causa_acto" Mode="In" Type="String" />
+      <Parameter Name="propietario" Mode="In" Type="String" />
+      <Parameter Name="titulo" Mode="In" Type="String" />
+      <Parameter Name="notaria" Mode="In" Type="String" />
+      <Parameter Name="fecha_escritura" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
+      <Parameter Name="area" Mode="In" Type="Decimal" />
+      <Parameter Name="vendedor_anterior" Mode="In" Type="String" />
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="anotacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialeHistoriaPropietariosmodificar">
+      <Parameter Name="id_historiapropietarios" Mode="In" Type="Int32" />
+      <Parameter Name="causa_acto" Mode="In" Type="String" />
+      <Parameter Name="propietario" Mode="In" Type="String" />
+      <Parameter Name="titulo" Mode="In" Type="String" />
+      <Parameter Name="notaria" Mode="In" Type="String" />
+      <Parameter Name="fecha_escritura" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
+      <Parameter Name="area" Mode="In" Type="Decimal" />
+      <Parameter Name="vendedor_anterior" Mode="In" Type="String" />
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="anotacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialesconsultar" ReturnType="Collection(Estudio_JuridicoModel.spFichaPredialesconsultar_Result)">
+      <Parameter Name="numero_ficha" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialescrear">
+      <Parameter Name="numero_ficha" Mode="In" Type="String" />
+      <Parameter Name="folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="estado_folio_matriz" Mode="In" Type="Boolean" />
+      <Parameter Name="fecha_apertura_folio" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_primera_anotacion" Mode="In" Type="DateTime" />
+      <Parameter Name="area_escritura" Mode="In" Type="Decimal" />
+      <Parameter Name="area_ovc" Mode="In" Type="Decimal" />
+      <Parameter Name="area_folio" Mode="In" Type="Decimal" />
+      <Parameter Name="ruta_archivo" Mode="In" Type="String" />
+      <Parameter Name="razon_diferencia_areas" Mode="In" Type="String" />
+      <Parameter Name="antecedentes" Mode="In" Type="String" />
+      <Parameter Name="estudio_folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="analisis_areas" Mode="In" Type="String" />
+      <Parameter Name="anotacion_que_afecta_la_inscripcion" Mode="In" Type="String" />
+      <Parameter Name="proteccion_colectiva" Mode="In" Type="String" />
+      <Parameter Name="linderos" Mode="In" Type="String" />
+      <Parameter Name="instrucciones_visita_campo" Mode="In" Type="String" />
+      <Parameter Name="direccion_folio" Mode="In" Type="String" />
+      <Parameter Name="quien_elaboro_yaprobo" Mode="In" Type="String" />
+      <Parameter Name="fecha_control_calidad_juridico" Mode="In" Type="DateTime" />
+      <Parameter Name="control_calidad_juridico" Mode="In" Type="String" />
+      <Parameter Name="aprobacion_interventoria" Mode="In" Type="String" />
+      <Parameter Name="fecha_aprobacion" Mode="In" Type="DateTime" />
+      <Parameter Name="linderos_escritura" Mode="In" Type="String" />
+      <Parameter Name="linderos_folio" Mode="In" Type="String" />
+      <Parameter Name="linderos_campo" Mode="In" Type="String" />
+      <Parameter Name="analisis_de_hecho_y_derecho" Mode="In" Type="String" />
+      <Parameter Name="inscripcion_catastro" Mode="In" Type="Boolean" />
+      <Parameter Name="antecedentes_registrales" Mode="In" Type="Boolean" />
+      <Parameter Name="concepto_juridico" Mode="In" Type="String" />
+      <Parameter Name="recomendaciones" Mode="In" Type="String" />
+      <Parameter Name="documentos_analizados" Mode="In" Type="String" />
+      <Parameter Name="lindero_norte" Mode="In" Type="String" />
+      <Parameter Name="lindero_occidente" Mode="In" Type="String" />
+      <Parameter Name="lindero_oriente" Mode="In" Type="String" />
+      <Parameter Name="lindero_sur" Mode="In" Type="String" />
+      <Parameter Name="pk_predio_folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="direccion_ovc" Mode="In" Type="String" />
+      <Parameter Name="enla_escritura_se_relaciona_plano_protocolizado" Mode="In" Type="Boolean" />
+      <Parameter Name="complementacion" Mode="In" Type="String" />
+      <Parameter Name="observaciones_con_respeto_al_propietario" Mode="In" Type="String" />
+      <Parameter Name="se_diligencio_ficha_predial" Mode="In" Type="Boolean" />
+      <Parameter Name="la_visita_de_campo_produjo_informe" Mode="In" Type="Boolean" />
+      <Parameter Name="se_levanto_acta_de_colindacia" Mode="In" Type="Boolean" />
+      <Parameter Name="situacion_juridica_inmueble" Mode="In" Type="String" />
+      <Parameter Name="numero_carpeta" Mode="In" Type="String" />
+      <Parameter Name="tarjeta_profesional_juridico" Mode="In" Type="String" />
+      <Parameter Name="coordinador_juridico" Mode="In" Type="String" />
+      <Parameter Name="nombre_interventor" Mode="In" Type="String" />
+      <Parameter Name="codigo_municipio" Mode="In" Type="String" />
+      <Parameter Name="descripcion_municipio" Mode="In" Type="String" />
+      <Parameter Name="datos_informe_juridico" Mode="In" Type="String" />
+      <Parameter Name="datos_informe_campo" Mode="In" Type="String" />
+      <Parameter Name="descripicion_destino" Mode="In" Type="String" />
+      <Parameter Name="descripicion_sector" Mode="In" Type="String" />
+      <Parameter Name="descripicion_adquisicion" Mode="In" Type="String" />
+      <Parameter Name="numero_ficha_ovc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialeseliminar">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spFichaPredialesmodificar">
+      <Parameter Name="id_ficha" Mode="In" Type="Int32" />
+      <Parameter Name="folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="estado_folio_matriz" Mode="In" Type="Boolean" />
+      <Parameter Name="fecha_apertura_folio" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_primera_anotacion" Mode="In" Type="DateTime" />
+      <Parameter Name="area_escritura" Mode="In" Type="Decimal" />
+      <Parameter Name="area_ovc" Mode="In" Type="Decimal" />
+      <Parameter Name="area_folio" Mode="In" Type="Decimal" />
+      <Parameter Name="ruta_archivo" Mode="In" Type="String" />
+      <Parameter Name="razon_diferencia_areas" Mode="In" Type="String" />
+      <Parameter Name="antecedentes" Mode="In" Type="String" />
+      <Parameter Name="estudio_folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="analisis_areas" Mode="In" Type="String" />
+      <Parameter Name="anotacion_que_afecta_la_inscripcion" Mode="In" Type="String" />
+      <Parameter Name="proteccion_colectiva" Mode="In" Type="String" />
+      <Parameter Name="linderos" Mode="In" Type="String" />
+      <Parameter Name="instrucciones_visita_campo" Mode="In" Type="String" />
+      <Parameter Name="direccion_folio" Mode="In" Type="String" />
+      <Parameter Name="quien_elaboro_yaprobo" Mode="In" Type="String" />
+      <Parameter Name="fecha_control_calidad_juridico" Mode="In" Type="DateTime" />
+      <Parameter Name="control_calidad_juridico" Mode="In" Type="String" />
+      <Parameter Name="aprobacion_interventoria" Mode="In" Type="String" />
+      <Parameter Name="fecha_aprobacion" Mode="In" Type="DateTime" />
+      <Parameter Name="linderos_escritura" Mode="In" Type="String" />
+      <Parameter Name="linderos_folio" Mode="In" Type="String" />
+      <Parameter Name="linderos_campo" Mode="In" Type="String" />
+      <Parameter Name="analisis_de_hecho_y_derecho" Mode="In" Type="String" />
+      <Parameter Name="inscripcion_catastro" Mode="In" Type="Boolean" />
+      <Parameter Name="antecedentes_registrales" Mode="In" Type="Boolean" />
+      <Parameter Name="concepto_juridico" Mode="In" Type="String" />
+      <Parameter Name="recomendaciones" Mode="In" Type="String" />
+      <Parameter Name="documentos_analizados" Mode="In" Type="String" />
+      <Parameter Name="lindero_norte" Mode="In" Type="String" />
+      <Parameter Name="lindero_occidente" Mode="In" Type="String" />
+      <Parameter Name="lindero_oriente" Mode="In" Type="String" />
+      <Parameter Name="lindero_sur" Mode="In" Type="String" />
+      <Parameter Name="pk_predio_folio_matriz" Mode="In" Type="String" />
+      <Parameter Name="direccion_ovc" Mode="In" Type="String" />
+      <Parameter Name="enla_escritura_se_relaciona_plano_protocolizado" Mode="In" Type="Boolean" />
+      <Parameter Name="complementacion" Mode="In" Type="String" />
+      <Parameter Name="observaciones_con_respeto_al_propietario" Mode="In" Type="String" />
+      <Parameter Name="se_diligencio_ficha_predial" Mode="In" Type="Boolean" />
+      <Parameter Name="la_visita_de_campo_produjo_informe" Mode="In" Type="Boolean" />
+      <Parameter Name="se_levanto_acta_de_colindacia" Mode="In" Type="Boolean" />
+      <Parameter Name="situacion_juridica_inmueble" Mode="In" Type="String" />
+      <Parameter Name="numero_carpeta" Mode="In" Type="String" />
+      <Parameter Name="tarjeta_profesional_juridico" Mode="In" Type="String" />
+      <Parameter Name="coordinador_juridico" Mode="In" Type="String" />
+      <Parameter Name="nombre_interventor" Mode="In" Type="String" />
+      <Parameter Name="codigo_municipio" Mode="In" Type="String" />
+      <Parameter Name="descripcion_municipio" Mode="In" Type="String" />
+      <Parameter Name="datos_informe_juridico" Mode="In" Type="String" />
+      <Parameter Name="datos_informe_campo" Mode="In" Type="String" />
+      <Parameter Name="descripicion_destino" Mode="In" Type="String" />
+      <Parameter Name="descripicion_sector" Mode="In" Type="String" />
+      <Parameter Name="descripicion_adquisicion" Mode="In" Type="String" />
+      <Parameter Name="numero_ficha_ovc" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="spFichaPredialPropietariosconsultar_Result">
+    <Property Type="Int32" Name="id_ficha" Nullable="true" />
+    <Property Type="Int32" Name="id_propietario" Nullable="true" />
+    <Property Type="String" Name="anotacion" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="id_ficha_perdial_propietario" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spMatriculaDerivadasconsultar_Result">
+    <Property Type="Int32" Name="id_ficha" Nullable="true" />
+    <Property Type="String" Name="matricula" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+    <Property Type="String" Name="pk_predio" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ubicar" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="spFichaPredialeHistoriaPropietariosconsultar_Result">
+    <Property Type="Int32" Name="id_historiapropietarios" Nullable="false" />
+    <Property Type="String" Name="causa_acto" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="propietario" Nullable="false" MaxLength="1000" />
+    <Property Type="String" Name="titulo" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="notaria" Nullable="true" MaxLength="1000" />
+    <Property Type="DateTime" Name="fecha_escritura" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="fecha_registro" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="area" Nullable="true" Precision="15" Scale="0" />
+    <Property Type="String" Name="vendedor_anterior" Nullable="false" MaxLength="1000" />
+    <Property Type="Int32" Name="id_ficha" Nullable="true" />
+    <Property Type="String" Name="anotacion" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="spFichaPredialesconsultar_Result">
+    <Property Type="Int32" Name="id_ficha" Nullable="false" />
+    <Property Type="String" Name="numero_ficha" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="folio_matriz" Nullable="true" MaxLength="60" />
+    <Property Type="Boolean" Name="estado_folio_matriz" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_apertura_folio" Nullable="true" />
+    <Property Type="Decimal" Name="area_escritura" Nullable="true" Precision="15" Scale="0" />
+    <Property Type="Decimal" Name="area_ovc" Nullable="true" Precision="15" Scale="0" />
+    <Property Type="String" Name="ruta_archivo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="razon_diferencia_areas" Nullable="true" />
+    <Property Type="String" Name="antecedentes" Nullable="true" />
+    <Property Type="String" Name="estudio_folio_matriz" Nullable="true" />
+    <Property Type="String" Name="analisis_areas" Nullable="true" />
+    <Property Type="String" Name="anotacion_que_afecta_la_inscripcion" Nullable="true" />
+    <Property Type="String" Name="proteccion_colectiva" Nullable="true" />
+    <Property Type="String" Name="linderos" Nullable="true" />
+    <Property Type="String" Name="instrucciones_visita_campo" Nullable="true" />
+    <Property Type="Decimal" Name="area_folio" Nullable="true" Precision="15" Scale="0" />
+    <Property Type="DateTime" Name="fecha_primera_anotacion" Nullable="true" />
+    <Property Type="String" Name="direccion_folio" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="quien_elaboro_yaprobo" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_control_calidad_juridico" Nullable="true" Precision="23" />
+    <Property Type="String" Name="control_calidad_juridico" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="aprobacion_interventoria" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_aprobacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="linderos_escritura" Nullable="true" />
+    <Property Type="String" Name="linderos_folio" Nullable="true" />
+    <Property Type="String" Name="linderos_campo" Nullable="true" />
+    <Property Type="String" Name="analisis_de_hecho_y_derecho" Nullable="true" />
+    <Property Type="Boolean" Name="inscripcion_catastro" Nullable="true" />
+    <Property Type="Boolean" Name="antecedentes_registrales" Nullable="true" />
+    <Property Type="String" Name="concepto_juridico" Nullable="true" />
+    <Property Type="String" Name="recomendaciones" Nullable="true" />
+    <Property Type="String" Name="documentos_analizados" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="lindero_norte" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="lindero_occidente" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="lindero_oriente" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="lindero_sur" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="pk_predio_folio_matriz" Nullable="true" MaxLength="80" />
+    <Property Type="String" Name="direccion_ovc" Nullable="true" MaxLength="80" />
+    <Property Type="Boolean" Name="enla_escritura_se_relaciona_plano_protocolizado" Nullable="true" />
+    <Property Type="String" Name="complementacion" Nullable="true" />
+    <Property Type="String" Name="observaciones_con_respeto_al_propietario" Nullable="true" />
+    <Property Type="Boolean" Name="se_diligencio_ficha_predial" Nullable="true" />
+    <Property Type="Boolean" Name="la_visita_de_campo_produjo_informe" Nullable="true" />
+    <Property Type="Boolean" Name="se_levanto_acta_de_colindacia" Nullable="true" />
+    <Property Type="String" Name="situacion_juridica_inmueble" Nullable="true" />
+    <Property Type="String" Name="numero_carpeta" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="tarjeta_profesional_juridico" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="coordinador_juridico" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="nombre_interventor" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="codigo_municipio" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="descripcion_municipio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="datos_informe_juridico" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="datos_informe_campo" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="descripicion_destino" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="descripicion_sector" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="descripicion_adquisicion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_ficha_ovc" Nullable="true" MaxLength="30" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Estudio_JuridicoModelStoreContainer" CdmEntityContainer="Estudio_JuridicoEntities">
+    <FunctionImportMapping FunctionImportName="spFichaPredialPropietariosconsultar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialPropietariosconsultar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Estudio_JuridicoModel.spFichaPredialPropietariosconsultar_Result">
+          <ScalarProperty Name="id_ficha" ColumnName="id_ficha" />
+          <ScalarProperty Name="id_propietario" ColumnName="id_propietario" />
+          <ScalarProperty Name="anotacion" ColumnName="anotacion" />
+          <ScalarProperty Name="id_ficha_perdial_propietario" ColumnName="id_ficha_perdial_propietario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spFichaPredialPropietarioscrear" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialPropietarioscrear" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialPropietariosmodificar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialPropietariosmodificar" />
+    <FunctionImportMapping FunctionImportName="spMatriculaDerivadasconsultar" FunctionName="Estudio_JuridicoModel.Store.spMatriculaDerivadasconsultar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Estudio_JuridicoModel.spMatriculaDerivadasconsultar_Result">
+          <ScalarProperty Name="id_ficha" ColumnName="id_ficha" />
+          <ScalarProperty Name="matricula" ColumnName="matricula" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="pk_predio" ColumnName="pk_predio" />
+          <ScalarProperty Name="ubicar" ColumnName="ubicar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spMatriculaDerivadascrear" FunctionName="Estudio_JuridicoModel.Store.spMatriculaDerivadascrear" />
+    <FunctionImportMapping FunctionImportName="spMatriculaDerivadaseliminar" FunctionName="Estudio_JuridicoModel.Store.spMatriculaDerivadaseliminar" />
+    <FunctionImportMapping FunctionImportName="spMatriculaDerivadasmodificar" FunctionName="Estudio_JuridicoModel.Store.spMatriculaDerivadasmodificar" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialHistoriaPropietarioseliminar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialHistoriaPropietarioseliminar" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialeHistoriaPropietariosconsultar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialeHistoriaPropietariosconsultar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Estudio_JuridicoModel.spFichaPredialeHistoriaPropietariosconsultar_Result">
+          <ScalarProperty Name="id_historiapropietarios" ColumnName="id_historiapropietarios" />
+          <ScalarProperty Name="causa_acto" ColumnName="causa_acto" />
+          <ScalarProperty Name="propietario" ColumnName="propietario" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="notaria" ColumnName="notaria" />
+          <ScalarProperty Name="fecha_escritura" ColumnName="fecha_escritura" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="vendedor_anterior" ColumnName="vendedor_anterior" />
+          <ScalarProperty Name="id_ficha" ColumnName="id_ficha" />
+          <ScalarProperty Name="anotacion" ColumnName="anotacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spFichaPredialeHistoriaPropietarioscrear" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialeHistoriaPropietarioscrear" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialeHistoriaPropietariosmodificar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialeHistoriaPropietariosmodificar" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialesconsultar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialesconsultar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Estudio_JuridicoModel.spFichaPredialesconsultar_Result">
+          <ScalarProperty Name="id_ficha" ColumnName="id_ficha" />
+          <ScalarProperty Name="numero_ficha" ColumnName="numero_ficha" />
+          <ScalarProperty Name="folio_matriz" ColumnName="folio_matriz" />
+          <ScalarProperty Name="estado_folio_matriz" ColumnName="estado_folio_matriz" />
+          <ScalarProperty Name="fecha_apertura_folio" ColumnName="fecha_apertura_folio" />
+          <ScalarProperty Name="area_escritura" ColumnName="area_escritura" />
+          <ScalarProperty Name="area_ovc" ColumnName="area_ovc" />
+          <ScalarProperty Name="ruta_archivo" ColumnName="ruta_archivo" />
+          <ScalarProperty Name="razon_diferencia_areas" ColumnName="razon_diferencia_areas" />
+          <ScalarProperty Name="antecedentes" ColumnName="antecedentes" />
+          <ScalarProperty Name="estudio_folio_matriz" ColumnName="estudio_folio_matriz" />
+          <ScalarProperty Name="analisis_areas" ColumnName="analisis_areas" />
+          <ScalarProperty Name="anotacion_que_afecta_la_inscripcion" ColumnName="anotacion_que_afecta_la_inscripcion" />
+          <ScalarProperty Name="proteccion_colectiva" ColumnName="proteccion_colectiva" />
+          <ScalarProperty Name="linderos" ColumnName="linderos" />
+          <ScalarProperty Name="instrucciones_visita_campo" ColumnName="instrucciones_visita_campo" />
+          <ScalarProperty Name="area_folio" ColumnName="area_folio" />
+          <ScalarProperty Name="fecha_primera_anotacion" ColumnName="fecha_primera_anotacion" />
+          <ScalarProperty Name="direccion_folio" ColumnName="direccion_folio" />
+          <ScalarProperty Name="quien_elaboro_yaprobo" ColumnName="quien_elaboro_yaprobo" />
+          <ScalarProperty Name="fecha_control_calidad_juridico" ColumnName="fecha_control_calidad_juridico" />
+          <ScalarProperty Name="control_calidad_juridico" ColumnName="control_calidad_juridico" />
+          <ScalarProperty Name="aprobacion_interventoria" ColumnName="aprobacion_interventoria" />
+          <ScalarProperty Name="fecha_aprobacion" ColumnName="fecha_aprobacion" />
+          <ScalarProperty Name="linderos_escritura" ColumnName="linderos_escritura" />
+          <ScalarProperty Name="linderos_folio" ColumnName="linderos_folio" />
+          <ScalarProperty Name="linderos_campo" ColumnName="linderos_campo" />
+          <ScalarProperty Name="analisis_de_hecho_y_derecho" ColumnName="analisis_de_hecho_y_derecho" />
+          <ScalarProperty Name="inscripcion_catastro" ColumnName="inscripcion_catastro" />
+          <ScalarProperty Name="antecedentes_registrales" ColumnName="antecedentes_registrales" />
+          <ScalarProperty Name="concepto_juridico" ColumnName="concepto_juridico" />
+          <ScalarProperty Name="recomendaciones" ColumnName="recomendaciones" />
+          <ScalarProperty Name="documentos_analizados" ColumnName="documentos_analizados" />
+          <ScalarProperty Name="lindero_norte" ColumnName="lindero_norte" />
+          <ScalarProperty Name="lindero_occidente" ColumnName="lindero_occidente" />
+          <ScalarProperty Name="lindero_oriente" ColumnName="lindero_oriente" />
+          <ScalarProperty Name="lindero_sur" ColumnName="lindero_sur" />
+          <ScalarProperty Name="pk_predio_folio_matriz" ColumnName="pk_predio_folio_matriz" />
+          <ScalarProperty Name="direccion_ovc" ColumnName="direccion_ovc" />
+          <ScalarProperty Name="enla_escritura_se_relaciona_plano_protocolizado" ColumnName="enla_escritura_se_relaciona_plano_protocolizado" />
+          <ScalarProperty Name="complementacion" ColumnName="complementacion" />
+          <ScalarProperty Name="observaciones_con_respeto_al_propietario" ColumnName="observaciones_con_respeto_al_propietario" />
+          <ScalarProperty Name="se_diligencio_ficha_predial" ColumnName="se_diligencio_ficha_predial" />
+          <ScalarProperty Name="la_visita_de_campo_produjo_informe" ColumnName="la_visita_de_campo_produjo_informe" />
+          <ScalarProperty Name="se_levanto_acta_de_colindacia" ColumnName="se_levanto_acta_de_colindacia" />
+          <ScalarProperty Name="situacion_juridica_inmueble" ColumnName="situacion_juridica_inmueble" />
+          <ScalarProperty Name="numero_carpeta" ColumnName="numero_carpeta" />
+          <ScalarProperty Name="tarjeta_profesional_juridico" ColumnName="tarjeta_profesional_juridico" />
+          <ScalarProperty Name="coordinador_juridico" ColumnName="coordinador_juridico" />
+          <ScalarProperty Name="nombre_interventor" ColumnName="nombre_interventor" />
+          <ScalarProperty Name="codigo_municipio" ColumnName="codigo_municipio" />
+          <ScalarProperty Name="descripcion_municipio" ColumnName="descripcion_municipio" />
+          <ScalarProperty Name="datos_informe_juridico" ColumnName="datos_informe_juridico" />
+          <ScalarProperty Name="datos_informe_campo" ColumnName="datos_informe_campo" />
+          <ScalarProperty Name="descripicion_destino" ColumnName="descripicion_destino" />
+          <ScalarProperty Name="descripicion_sector" ColumnName="descripicion_sector" />
+          <ScalarProperty Name="descripicion_adquisicion" ColumnName="descripicion_adquisicion" />
+          <ScalarProperty Name="numero_ficha_ovc" ColumnName="numero_ficha_ovc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spFichaPredialescrear" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialescrear" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialeseliminar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialeseliminar" />
+    <FunctionImportMapping FunctionImportName="spFichaPredialesmodificar" FunctionName="Estudio_JuridicoModel.Store.spFichaPredialesmodificar" />
+  </EntityContainerMapping>
+</Mapping>
